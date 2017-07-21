@@ -15,6 +15,11 @@
 		6406935D1F1FA6A500B28496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6406935B1F1FA6A500B28496 /* LaunchScreen.storyboard */; };
 		640693681F1FA6A500B28496 /* CustomCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693671F1FA6A500B28496 /* CustomCollectionViewTests.swift */; };
 		640693731F1FA6A500B28496 /* CustomCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693721F1FA6A500B28496 /* CustomCollectionViewUITests.swift */; };
+		640693831F20492000B28496 /* MyCustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693821F20492000B28496 /* MyCustomCollectionView.swift */; };
+		640693851F204C2900B28496 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693841F204C2900B28496 /* MyViewModel.swift */; };
+		640693871F204C3400B28496 /* MyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693861F204C3400B28496 /* MyDataModel.swift */; };
+		6406938A1F204F6E00B28496 /* TypeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640693881F204F6E00B28496 /* TypeCategoryCollectionViewCell.swift */; };
+		6406938B1F204F6E00B28496 /* TypeCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 640693891F204F6E00B28496 /* TypeCategoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		6406936E1F1FA6A500B28496 /* CustomCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		640693721F1FA6A500B28496 /* CustomCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewUITests.swift; sourceTree = "<group>"; };
 		640693741F1FA6A500B28496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640693821F20492000B28496 /* MyCustomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCollectionView.swift; sourceTree = "<group>"; };
+		640693841F204C2900B28496 /* MyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
+		640693861F204C3400B28496 /* MyDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDataModel.swift; sourceTree = "<group>"; };
+		640693881F204F6E00B28496 /* TypeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypeCategoryCollectionViewCell.swift; path = ../TypeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		640693891F204F6E00B28496 /* TypeCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TypeCategoryCollectionViewCell.xib; path = ../TypeCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +109,13 @@
 		6406934E1F1FA6A500B28496 /* CustomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				640693881F204F6E00B28496 /* TypeCategoryCollectionViewCell.swift */,
+				640693891F204F6E00B28496 /* TypeCategoryCollectionViewCell.xib */,
 				6406934F1F1FA6A500B28496 /* AppDelegate.swift */,
+				640693861F204C3400B28496 /* MyDataModel.swift */,
+				640693841F204C2900B28496 /* MyViewModel.swift */,
 				640693511F1FA6A500B28496 /* ViewController.swift */,
+				640693821F20492000B28496 /* MyCustomCollectionView.swift */,
 				640693531F1FA6A500B28496 /* Main.storyboard */,
 				640693591F1FA6A500B28496 /* Assets.xcassets */,
 				6406935B1F1FA6A500B28496 /* LaunchScreen.storyboard */,
@@ -196,6 +211,7 @@
 				TargetAttributes = {
 					6406934B1F1FA6A500B28496 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DHX68B8LX7;
 						ProvisioningStyle = Automatic;
 					};
 					640693621F1FA6A500B28496 = {
@@ -237,6 +253,7 @@
 			files = (
 				6406935D1F1FA6A500B28496 /* LaunchScreen.storyboard in Resources */,
 				6406935A1F1FA6A500B28496 /* Assets.xcassets in Resources */,
+				6406938B1F204F6E00B28496 /* TypeCategoryCollectionViewCell.xib in Resources */,
 				640693551F1FA6A500B28496 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6406938A1F204F6E00B28496 /* TypeCategoryCollectionViewCell.swift in Sources */,
 				640693521F1FA6A500B28496 /* ViewController.swift in Sources */,
 				640693501F1FA6A500B28496 /* AppDelegate.swift in Sources */,
 				640693581F1FA6A500B28496 /* CustomCollectionView.xcdatamodeld in Sources */,
+				640693871F204C3400B28496 /* MyDataModel.swift in Sources */,
+				640693831F20492000B28496 /* MyCustomCollectionView.swift in Sources */,
+				640693851F204C2900B28496 /* MyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHX68B8LX7;
 				INFOPLIST_FILE = CustomCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OuKun.CustomCollectionView;
@@ -430,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHX68B8LX7;
 				INFOPLIST_FILE = CustomCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OuKun.CustomCollectionView;
