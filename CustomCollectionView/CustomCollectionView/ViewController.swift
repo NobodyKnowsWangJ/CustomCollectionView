@@ -63,7 +63,7 @@ class ViewController: UIViewController,MyViewControllerDelegate,UICollectionView
             cell.deleteHandler = {
                 () in
                 self.viewModel.customDataSource.remove(at: indexPath.row)
-                self.collectionView.eidteStatus = false
+                self.collectionView.reloadData()
             }
             cell.shakeWithEdite()
         }else{
@@ -85,6 +85,7 @@ class ViewController: UIViewController,MyViewControllerDelegate,UICollectionView
         let obj = viewModel.customDataSource[sourceIndexPath.row]
         viewModel.customDataSource.remove(at: sourceIndexPath.row)
         viewModel.customDataSource.insert(obj, at: destinationIndexPath.row)
+        self.collectionView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
